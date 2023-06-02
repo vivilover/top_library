@@ -1,0 +1,133 @@
+/* High Level Styling */
+body {
+  font-family: 'Playfair Display', serif;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+h1 {
+  text-align: right;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+form {
+  background-color: #ffb766;
+  padding: 20px 20px;
+  border-radius: 15px;
+  color: rgb(60, 60, 60);
+}
+
+/* Top Section */
+#library-logo {
+  width: 80px;
+}
+
+.top-container {
+  text-align: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: end;
+}
+
+.book-stats {
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: #ACE0B5;
+  border: 3px solid rgba(48, 46, 163, .2);
+  color: rgb(63, 63, 63);
+  border-radius: 3px;
+}
+
+.stat-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Middle Section */
+.book-add-form {
+  display: grid;
+  width: 400px;
+  row-gap: 10px;
+  justify-content: stretch;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.book-form-text {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+}
+
+.book-read-buttons {
+  display: grid;
+  grid-template-areas: "read-txt read-btn not-read-btn";
+  grid-gap: 10px;
+}
+
+.check-read-item:nth-child(1) {
+  grid-area: read-txt;
+}
+
+.check-read-item:nth-child(2) {
+  grid-area: read-btn;
+  justify-self: stretch;
+}
+
+.check-read-item:nth-child(3) {
+  grid-area:  not-read-btn;
+  justify-self: stretch;
+}
+
+.bookform-submit-btn {
+  width: 30%;
+  justify-self: center;
+}
+
+.bookform-submit-btn:hover {
+  background-color: rgba(0, 0, 255, 0.3)
+}
+
+/* Book-read-status Radio Buttons */
+.book-read-status {
+  display: grid;
+  /* grid-template-areas: "txt read not-read"; */
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+/* BOOKS in the library */
+.book-list {
+
+}
+
+.library-container {
+  max-width: 80%;
+  margin: 50px auto 0 auto;
+  display: grid;
+  grid-template-columns: [first] 1fr [line2] 2fr [line3] 1fr [end];
+  justify-items: stretch;
+
+  /* border: 2px dotted black; */
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  row-gap: 20px;
+  column-gap: 10px;
+  padding: 0 10px;
+}
+
+.book-name-column {
+  background-color: #d3d3d3;
+}
+
+.book-author-column {
+  background-color: #d3d3d3;
+}
+
+.book-read-status-column {
+  background-color: #d3d3d3;
+}
